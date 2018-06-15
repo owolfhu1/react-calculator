@@ -4,7 +4,7 @@ export default class Button extends Component {
     render() {
         return (
             <td>
-                <button>{this.props.value}</button>
+                <button onClick={ ()=> this.props.click(this.props.value) }>{this.props.value}</button>
             </td>
         );
     }
